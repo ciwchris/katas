@@ -1,0 +1,27 @@
+(use 'midje.auto)
+(use 'midje.repl)
+(autotest)
+(def test [0 0 0 0])
+(def gutter [0 0 0 0])
+(take 2 gutter)
+(reduce + (take 2 gutter))
+(drop 2 gutter)
+(autotest)
+(use 'midje.repl)
+(autotest)
+(use 'midje.repl)
+(defn test-rolls [0 0 0 0])
+(def test-rolls [0 0 0 0])
+(loop [score 0 balls test-rolls] (cond
+(empty? balls) score
+:else (recur 0 (drop 2 balls)))
+)
+(loop [score 0 balls test-rolls] (cond
+(empty? balls) score
+:else (recur 1 (drop 2 balls))))
+(loop [score 0 balls test-rolls] (cond
+(empty? balls) score
+:else (recur (+ score 1) (drop 2 balls))))
+(autotest)
+(use 'midje.repl)
+(autotest)
