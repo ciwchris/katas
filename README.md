@@ -1,6 +1,6 @@
 katas
 -----
 
-- Bowling
-- FizzBuzz
-- Prime Factors
+* Bowling
+* FizzBuzz
+* Prime Factors
